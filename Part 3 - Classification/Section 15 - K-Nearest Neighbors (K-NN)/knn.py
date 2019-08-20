@@ -22,7 +22,7 @@ X_test = sc.transform(X_test)
 
 # Fitting K-NN to the Training set
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+classifier = KNeighborsClassifier(n_neighbors = 5)
 classifier.fit(X_train, y_train)
 
 # Predicting the Test set results

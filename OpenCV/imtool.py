@@ -11,7 +11,7 @@ def mouse_event(event,x,y,flags,param):
         drawing = True
         ix,iy = x,y
     elif event == cv2.EVENT_LBUTTONUP:
-        print ("color rgb", img[iy,ix][0],img[iy,ix][1],img[iy,ix][2])
+        #print ("color rgb", img[iy,ix][0],img[iy,ix][1],img[iy,ix][2])
         print ("position", x, y)
        # print ix,iy
         drawing = False

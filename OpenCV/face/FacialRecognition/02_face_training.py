@@ -30,10 +30,10 @@ def getImagesAndLabels(path):
 
     for imagePath in imagePaths:
 
-        PIL_img = Image.open(imagePath).convert('L') # convert it to grayscale
-        img_numpy = np.array(PIL_img,'uint8')
+        img_numpy = cv2.imread(imagePath, 0)# convert it to grayscale
 
         id = int(os.path.split(imagePath)[-1].split(".")[1])
+        
         faces = detector.detectMultiScale(img_numpy)
 
         for (x,y,w,h) in faces:

@@ -1,12 +1,3 @@
-''''
-Real Time Face Recogition
-	==> Each face stored on dataset/ dir, should have a unique numeric integer ID as 1, 2, 3, etc                       
-	==> LBPH computed model (trained faces) should be on trainer/ dir
-Based on original code by Anirban Kar: https://github.com/thecodacus/Face-Recognition    
-
-Developed by Marcelo Rovai - MJRoBot.org @ 21Feb18  
-
-'''
 
 import cv2
 import numpy as np
@@ -32,7 +23,7 @@ cam = cv2.VideoCapture(0)
 
 while True:
 
-    ret, img =cam.read()
+    ret, img = cam.read()
 
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 

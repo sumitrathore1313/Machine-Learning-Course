@@ -1,4 +1,3 @@
-
 import cv2
 import numpy as np
 from PIL import Image
@@ -16,7 +15,7 @@ def getImagesAndLabels(path):
     imagePaths = [os.path.join(path,f) for f in os.listdir(path)]     
     faceSamples=[]
     ids = []
-
+    #print(imagePaths)
     for imagePath in imagePaths:
 
         img_numpy = cv2.imread(imagePath, 0)# convert it to grayscale
